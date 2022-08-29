@@ -1,0 +1,208 @@
+@media screen and (max-width: 1200px) {
+    .clients {
+        .col-2 {
+            padding: 0 3rem;
+        }
+
+        &__testimonial {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav {
+        
+        .left-box {
+            width: 100%;
+
+            button {
+                display: flex;
+            }
+        }
+
+        .right-box {
+            display: none;
+        }
+    }
+
+    .clients {
+        .row-2 {
+            flex-direction: column-reverse;
+        }
+
+        .col-2 {
+            height: auto;
+            width: 100%;
+            padding: 0;
+        }
+
+        &__testimonial {
+            width: 60%;
+        }
+    }
+
+    .plans {
+        .row-2 {
+            flex-direction: column;
+        }
+
+        .col:first-child {
+            margin-bottom: 3rem;
+
+            span {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .col:last-child {
+            padding: 0;
+        }
+
+        .col:first-child,
+        .col:last-child {
+            width: 100%;
+        }
+    }
+
+    .quote {
+        &-box {
+            &::before {
+                left: -12%;
+                width: 8rem;
+                height: 8rem;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 900px) {
+    .discover {
+        .row-pc {
+            display: none;
+        }
+
+        .row-slider {
+            display: flex;
+
+            .col {
+                width: 300px;
+                outline: none;
+                margin-right: 1rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .slick-dots li button::before {
+                color: $color-3;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .row-2 {
+        flex-direction: column;
+    }
+
+    .col-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .cta {
+        .col {
+            width: 100%;
+        }
+    }
+
+    .quote {
+        &-box {
+            &::before {
+                top: -25%;
+                left: -2%;
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    header {
+        .container-lg {
+            padding: 0;
+        }
+
+        .nav {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .hero {
+            &__text-box {
+                transform: translateX(0);
+            }
+
+            &__image-box {
+                display: none;
+            }
+
+            background-image: url('../../../assets/yoga-instrucutor.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 2rem;
+        }
+    }
+
+    .clients {
+        .row-2 {
+            flex-direction: column-reverse;
+        }
+
+        .col-2 {
+            height: auto;
+            width: 100%;
+            padding: 0;
+        }
+
+        &__logos {
+            grid-template-columns: repeat(3, 150px);
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .clients {
+        &__logos {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__testimonial {
+            width: 100%;
+        }
+    }
+
+    .plans {
+        .col:first-child {
+            display: block;
+        }
+        &-box {
+            grid-template-columns: 1fr;
+            gap: 2rem 1.5rem;
+        }
+    }
+
+    .quote {
+        &-box {
+            &::before {
+                top: -45%;
+            }
+
+            p {
+                font-size: 4rem;
+                line-height: 1;
+            }
+        }
+    }
+}
