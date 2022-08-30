@@ -2,12 +2,11 @@
 
 <img src="./main.png" />
                              </a>
-<p align="center"> Pokedex using PokeAPI </p>
 
 ## 🔥 Project Link
 
 
-<li><a href="https://joaovporto.github.io/yoga/">Pokedex</li>
+<li><a href="https://joaovporto.github.io/yoga/">Link</li>
 
 ## 🛠️ Technologies
 
